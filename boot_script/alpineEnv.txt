@@ -1,0 +1,10 @@
+verbosity=4
+bootlogo=false
+console=display
+disp_mode=1920x1080p60
+overlay_prefix=sun8i-h3
+rootdev=UUID=
+rootfstype=vfat
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
+extraargs=net.ifnames=0
+docker_optimizations=off
