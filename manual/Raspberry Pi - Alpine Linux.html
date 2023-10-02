@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="client-js" dir="ltr" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Raspberry Pi - Alpine Linux</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Raspberry_Pi","wgTitle":"Raspberry Pi","wgCurRevisionId":16063,"wgRevisionId":16063,"wgArticleId":2659,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Installation"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Raspberry_Pi","wgRelevantArticleId":2659,"wgRequestId":"b8c6de37d760f23959f3ba63","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@03q4xak",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="Raspberry%20Pi%20-%20Alpine%20Linux_files/load.css">
+<script async="" src="Raspberry%20Pi%20-%20Alpine%20Linux_files/load.php"></script>
+<style>
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:0;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;padding:0;margin:0}.suggestions-result{color:#000;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#2a4b8d;color:#fff}.suggestions-special .special-label{color:#72777d;text-align:left}.suggestions-special .special-query{color:#000;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:#c8ccd1}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:#fff}.highlight{font-weight:bold}
+@media screen {
+	.tochidden,.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.toctoggle{font-size:94%}}
+@media print {
+	.toc.tochidden,.toctoggle{display:none}}</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:#000;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:#fff}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;text-overflow:ellipsis;white-space:nowrap}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<meta name="generator" content="MediaWiki 1.31.1">
+<link rel="shortcut icon" href="https://wiki.alpinelinux.org/images/favicon.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.alpinelinux.org/w/opensearch_desc.php" title="Alpine Linux (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.alpinelinux.org/w/api.php?action=rsd">
+<link rel="license" href="https://wiki.alpinelinux.org/wiki/MediaWiki:Copyright">
+<link rel="alternate" type="application/atom+xml" title="Alpine Linux Atom feed" href="https://wiki.alpinelinux.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+<script src="Raspberry%20Pi%20-%20Alpine%20Linux_files/load_002.php"></script></head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Raspberry_Pi rootpage-Raspberry_Pi skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Raspberry Pi</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Alpine Linux</div>				<div id="contentSub"></div>
+								<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><div class="mw-parser-output"><p>This tutorial will help you install Alpine Linux on your Raspberry Pi.
+</p>
+<div id="toc" class="toc"><div class="toctitle" dir="ltr" lang="en"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a role="button" tabindex="0" class="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Preparation"><span class="tocnumber">1</span> <span class="toctext">Preparation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Wifi_support"><span class="tocnumber">1.1</span> <span class="toctext">Wifi support</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Installation"><span class="tocnumber">2</span> <span class="toctext">Installation</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Post_Installation"><span class="tocnumber">3</span> <span class="toctext">Post Installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Update_the_System"><span class="tocnumber">3.1</span> <span class="toctext">Update the System</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Clock-related_error_messages"><span class="tocnumber">3.2</span> <span class="toctext">Clock-related error messages</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#WiFi_on_boot"><span class="tocnumber">3.3</span> <span class="toctext">WiFi on boot</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#X11_Setup"><span class="tocnumber">3.4</span> <span class="toctext">X11 Setup</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Enable_OpenGL_.28RPi_3.29"><span class="tocnumber">3.5</span> <span class="toctext">Enable OpenGL (RPi 3)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Persistent_storage"><span class="tocnumber">4</span> <span class="toctext">Persistent storage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Loopback_image_with_overlayfs"><span class="tocnumber">4.1</span> <span class="toctext">Loopback image with overlayfs</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Traditional_disk-based_.28sys.29_installation"><span class="tocnumber">4.2</span> <span class="toctext">Traditional disk-based (sys) installation</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Persistent_Installation_on_RPi3"><span class="tocnumber">4.3</span> <span class="toctext">Persistent Installation on RPi3</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#See_Also"><span class="tocnumber">5</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Preparation">Preparation</span></h2>
+<p>This section will help you format and partition your SD card:
+</p>
+<ol><li><a rel="nofollow" class="external text" href="http://alpinelinux.org/downloads/">Download</a> Alpine for Raspberry Pi tarball for the <b>armhf architecture</b> which is named as <code>alpine-rpi-&lt;version&gt;-armhf.tar.gz</code>.  You will need version 3.2.0 or greater if you have a Raspberry Pi 2.</li>
+<li>Mount your SD card to your workstation</li>
+<li>Use <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/GNOME_Disks">gnome-disks</a> or <a rel="nofollow" class="external text" href="http://linux.die.net/man/8/fdisk">fdisk</a> to create a FAT32 partition.  If you are using fdisk, the FAT32 partition type is called <i>W95 FAT32 (LBA)</i> and its ID is 0x0C.</li>
+<li>Mark the newly created partition as bootable and save</li>
+<li>Mount the previously created partition</li>
+<li>Extract the tarball contents to your FAT32 partition</li>
+<li>Unmount the SD Card.</li></ol>
+<p>Note: You should be safe using the <b>armhf</b> build on all versions
+ of Raspberry Pi (including Pi Zero and Compute Modules); but it may 
+perform less optimally on recent versions of Raspberry Pi. The <b>armv7</b> build is compatible with Raspberry Pi 2 Model B. The <b>aarch64</b> build should be compatible with Raspberry Pi 2 Model v1.2, and is compatible with Raspberry Pi 3 and Compute Module 3.
+</p>
+<h3><span class="mw-headline" id="Wifi_support">Wifi support</span></h3>
+<p>If you need wifi to work, perform the following before unmounting the SD card:
+</p>
+<ol><li><a rel="nofollow" class="external text" href="https://github.com/RPi-Distro/firmware-nonfree/tree/master/brcm">Download</a> the latest broadcom drivers for the Raspberry Pi to your machine and</li>
+<li>Copy them to [SD card]/firmware/brcm/.</li></ol>
+<p><code>
+git clone --depth 1 <a rel="nofollow" class="external free" href="https://github.com/RPi-Distro/firmware-nonfree.git">https://github.com/RPi-Distro/firmware-nonfree.git</a>
+</code>
+</p><p><code>
+cp firmware-nonfree/brcm/* [SD card]/firmware/brcm
+</code>
+</p>
+<h2><span class="mw-headline" id="Installation">Installation</span></h2>
+<p>Optionally create a "usercfg.txt" file on your SD card to configure low-level system settings. Specifications can be found <a rel="nofollow" class="external text" href="https://www.raspberrypi.org/documentation/configuration/config-txt">here</a>. Some interesting values include:
+</p>
+<ul><li>Enable audio: dtparam=audio=on</li>
+<li>If you see black edges around your screen: disable_overscan=1</li></ul>
+<p>Alpine Linux will be installed as <a href="https://wiki.alpinelinux.org/wiki/Installation#Installation_Handbook" title="Installation">diskless mode</a>, hence you need to use <a href="https://wiki.alpinelinux.org/wiki/Alpine_local_backup" title="Alpine local backup">Alpine Local Backup (lbu)</a> to save your modifications between reboots.  Follow these steps to install Alpine Linux:
+</p>
+<ol><li>Insert the SD Card into the Raspberry Pi and turn it on</li>
+<li>Login into the Alpine system as root.  Leave the password empty.</li>
+<li>Type <code>setup-alpine</code></li>
+<li>Once the installation is complete, commit the changes by typing <code>lbu commit -d</code></li></ol>
+<p>Type <code>reboot</code> to verify that the installation was indeed successful.
+</p>
+<h2><span class="mw-headline" id="Post_Installation">Post Installation</span></h2>
+<h3><span class="mw-headline" id="Update_the_System">Update the System</span></h3>
+<p>Upon installation, make sure that your system is up-to-date:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">apk update
+apk upgrade</p>
+<p>Don't forget to save the changes:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">lbu commit -d</p>
+<h3><span class="mw-headline" id="Clock-related_error_messages">Clock-related error messages</span></h3>
+<p>During the booting time, you might notice errors related to the hardware clock.  The Raspberry Pi does not have
+a hardware clock and therefore you need to disable the hwclock daemon and enable swclock:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">rc-update add swclock boot    # enable the software clock
+rc-update del hwclock boot    # disable the hardware clock</p>
+<p>Since Raspberry Pi does not have a clock, the Alpine Linux needs to know what the time is by using a
+<a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Network_Time_Protocol">Network Time Protocol (NTP)</a> daemon.  Make sure that you a
+NTP daemon installed and running.  If you are not sure, then you can install NTP client by running the following
+command:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">setup-ntp</p>
+<p>Busybox NTP client might be the most lightweight solution.  Save the changes and reboot, once the NTP software is
+installed and running:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">lbu commit -d
+reboot</p>
+<p>After reboot, make sure that the <code>date</code> command outputs the correct date and time.
+</p>
+<h3><span class="mw-headline" id="WiFi_on_boot">WiFi on boot</span></h3>
+<p>If you have already <a href="https://wiki.alpinelinux.org/wiki/Connecting_to_a_wireless_access_point" title="Connecting to a wireless access point">configured wifi</a> during the setup, the connection will not return on reboot.
+You will need to start up a service to automatically connect to the wireless access point.
+</p>
+<ol><li>Run <code>rc-update add wpa_supplicant boot</code> to connect to the wireless access point on boot.</li>
+<li>Run it manually with <code>/etc/init.d/wpa_supplicant start</code>.</li></ol>
+<h3><span class="mw-headline" id="X11_Setup">X11 Setup</span></h3><p>
+Here are what you need if you want to try and run a single X11 application like a browser kiosk or maybe even a desktop: ​</p><p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">setup-xorg-base 
+​apk add xf86-video-fbdev xf86-video-vesa xf86-input-mouse xf86-input-keyboard dbus ​set​xkbmap kbd  
+rc-update ​​add dbus</p>
+<p>Install XFCE:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">apk add xfce4</p>
+<p>Commit your changes:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">lbu_commit -d</p>
+<p><br>
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">startx</p>
+<h3><span id="Enable_OpenGL_(RPi_3)"></span><span class="mw-headline" id="Enable_OpenGL_.28RPi_3.29">Enable OpenGL (RPi 3)</span></h3>
+<p>Remount the boot partition writeable (ie. /media/mmcblk0p1):
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">mount -o remount,rw /media/mmcblk0p1</p>
+<p>Add the following lines to /media/mmcblk0p1/config.txt 
+</p>
+<pre>dtoverlay=vc4-kms-v3d
+gpu_mem=128
+</pre>
+<p>256MB gpu_mem is also possible
+</p><p>Install mesa-dri-vc4:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">apk add mesa-dri-vc4</p>
+<p>Reboot:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">lbu_commit -d; reboot</p>
+<h2><span class="mw-headline" id="Persistent_storage">Persistent storage</span></h2>
+<h3><span class="mw-headline" id="Loopback_image_with_overlayfs">Loopback image with overlayfs</span></h3>
+<p>The install is in disk-less mode and forces everything into memory, 
+if you want additional storage we need to create loop-back storage onto 
+the SD mounted with overlayfs.
+</p><p>First make the sd-card writable again and change fstab to always do so:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">mount /media/mmcblk0p1 -o rw,remount
+sed -i 's/vfat\ ro,/vfat\ rw,' /etc/fstab</p>
+<p>Create the loop-back file, this example is 1 GB:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">dd if=/dev/zero of=/media/mmcblk0p1/persist.img bs=1024 count=0 seek=1048576</p>
+<p>Install the ext utilities:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">apk add e2fsprogs</p>
+<p>Format the loop-back file:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">mkfs.ext4 /media/mmcblk0p1/persist.img</p>
+<p>Mount the storage: 
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">echo "/media/mmcblk0p1/persist.img /media/persist ext4 rw,relatime,errors=remount-ro 0 0" &gt;&gt; /etc/fstab
+mkdir /media/persist 
+mount -a</p>
+<p>Make the overlay folders, we are doing /usr here, but you can do /home or anything else:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">mkdir /media/persist/usr 
+mkdir /media/persist/.work 
+echo "overlay /usr overlay lowerdir=/usr,upperdir=/media/persist/usr,workdir=/media/persist/.work 0 0" &gt;&gt; /etc/fstab 
+mount -a</p>
+<p>Your /etc/fstab should look something like this:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">/dev/cdrom      /media/cdrom    iso9660 noauto,ro 0 0
+/dev/usbdisk    /media/usb      vfat    noauto,ro 0 0
+/dev/mmcblk0p1 /media/mmcblk0p1 vfat rw,relatime,fmask=0022,dmask=0022,errors=remount-ro 0 0
+/media/mmcblk0p1/persist.img /media/persist ext4 rw,relatime,errors=remount-ro 0 0
+overlay /usr overlay lowerdir=/usr,upperdir=/media/persist/usr,workdir=/media/persist/.work 0 0</p>
+<p>Now commit the changes: (optionally remove the e2fsprogs, but it does contain repair tools)
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">lbu_commit -d</p>
+<p>Remember with this setup, if you install things and you have done 
+this overlay for /usr, you must not commit the 'apk add', otherwise 
+while it boots it will try and install it to memory and not to the 
+persist storage.
+</p><p>If you do want to install something small at boot you can use `apk add` and `lbu commit -d`.
+</p><p>If it is something a bit bigger then you can use `apk add` but 
+then not commit it, it will be persistent (in /user), but do check 
+everything you need is in that directory and not in folders you have not
+ made persistent.
+</p>
+<h3><span id="Traditional_disk-based_(sys)_installation"></span><span class="mw-headline" id="Traditional_disk-based_.28sys.29_installation">Traditional disk-based (sys) installation</span></h3>
+<div class="floatleft"><img alt="Tango-dialog-warning.png" src="Raspberry%20Pi%20-%20Alpine%20Linux_files/Tango-dialog-warning.png" width="48" height="48"></div><div style="padding: 0.25em; margin: 0.50em 0; background-color: #FFDDDD; border: 2px solid #FFBBBB"><strong> Warning: </strong>This isn't yet supported by the Alpine setup scripts for Raspberry Pi. It requires manual intervention, and might break.</div><p><br>
+</p><p>It is also possible to switch to a fully disk-based installation:
+ this is not yet formally supported, but can be done somewhat manually. 
+This frees all the memory otherwise needed for the root filesystem, 
+allowing more installed packages.
+</p><p>Split your SD card into two partitions: the FAT32 boot partition described above (in this example it'll be <code>mmcblk0p1</code>) , and a second partition to hold the root filesystem (here it'll be <code>mmcblk0p2</code>). Boot and configure your diskless system as above, then create a root filesystem:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">apk add e2fsprogs
+mkfs.ext4 /dev/mmcblk0p2</p>
+<p>Now do a disk install via a mountpoint. The <code>setup-disk</code> 
+script will give some errors about syslinux/extlinux, but you can ignore
+ these: the Raspberry Pi doesn't need this to boot anyway.
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">mkdir /stage
+mount /dev/mmcblk0p2 /stage
+setup-disk -o /media/mmcblk0p1/MYHOSTNAME.apkovl.tar.gz /stage
+# (ignore errors about syslinux/extlinux)</p>
+<p>Add a line to <code>/stage/etc/fstab</code> to mount the Pi's boot partition again:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">/dev/mmcblk0p1 /media/mmcblk0p1 vfat defaults 0 0</p>
+<p>Now add a <code>root=/dev/mmcblk0p2</code> parameter to the Pi's boot command line, either <code>cmdline-rpi2.txt</code> or <code>cmdline-rpi.txt</code> depending on model:
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">mount -o remount,rw /media/mmcblk0p1
+sed -i '$ s/$/ root=\/dev\/mmcblk0p2/' /media/mmcblk0p1/cmdline-rpi2.txt</p>
+<p>You might also consider <code>overlaytmpfs=yes</code> here, which 
+will cause the underlying SD card root filesystem to be mounted 
+read-only, with an overlayed tmpfs for modifications which will be 
+discarded on shutdown.
+</p><p>Beware, though, that <b>the contents of /boot will be ignored when the Pi boots</b>:
+ it will use the kernel, initramfs, and modloop images from the FAT32 
+boot partition. To update the kernel, initfs or modules, you will need 
+to manually (generate and) copy these to the boot partition or you could
+ use bind mount so that manually copy the files to boot partition is not
+ needed.
+</p>
+<p style="background-color:#eeeeee; border:1px dashed #bbbbbb; line-height:1.1em; padding:1em; font-family:monospace, Courier; font-size:10pt; white-space:pre; overflow:auto;">echo /media/mmcblk0p1/boot /boot none defaults,bind 0 0 &gt;&gt; /etc/fstab</p>
+<h3><span class="mw-headline" id="Persistent_Installation_on_RPi3">Persistent Installation on RPi3</span></h3>
+<p>See this page&nbsp;: <a rel="nofollow" class="external free" href="https://wiki.alpinelinux.org/wiki/Classic_install_or_sys_mode_on_Raspberry_Pi">https://wiki.alpinelinux.org/wiki/Classic_install_or_sys_mode_on_Raspberry_Pi</a>
+</p><p>See <a rel="nofollow" class="external free" href="https://web.archive.org/web/20171125115835/https://forum.alpinelinux.org/comment/1084#comment-1084">https://web.archive.org/web/20171125115835/https://forum.alpinelinux.org/comment/1084#comment-1084</a>
+</p>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="https://wiki.alpinelinux.org/wiki/Classic_install_or_sys_mode_on_Raspberry_Pi" title="Classic install or sys mode on Raspberry Pi">Classic install or sys mode on Raspberry Pi</a> - a variant.</li>
+<li><a href="https://wiki.alpinelinux.org/wiki/Raspberry_Pi_3_-_Setting_Up_Bluetooth" title="Raspberry Pi 3 - Setting Up Bluetooth">Raspberry Pi 3 - Setting Up Bluetooth</a></li>
+<li><a href="https://wiki.alpinelinux.org/wiki/Raspberry_Pi_3_-_Configuring_it_as_wireless_access_point_-AP_Mode" title="Raspberry Pi 3 - Configuring it as wireless access point -AP Mode">Raspberry Pi 3 - Configuring it as wireless access point -AP Mode</a></li>
+<li><a href="https://wiki.alpinelinux.org/wiki/Linux_Router_with_VPN_on_a_Raspberry_Pi" title="Linux Router with VPN on a Raspberry Pi">Linux Router with VPN on a Raspberry Pi</a></li>
+<li><a href="https://wiki.alpinelinux.org/wiki/Create_a_bootable_SDHC_from_a_Mac" title="Create a bootable SDHC from a Mac">Create a bootable SDHC from a Mac</a></li>
+<li>Build custom Raspberry Pi images based on Alpine via <a rel="nofollow" class="external text" href="https://github.com/tolstoyevsky/pieman">Pieman</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190901051542
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.040 seconds
+Real time usage: 0.041 seconds
+Preprocessor visited node count: 274/1000000
+Preprocessor generated node count: 747/1000000
+Post‐expand include size: 6932/2097152 bytes
+Template argument size: 2000/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 329/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    8.406      1 -total
+ 39.44%    3.315     25 Template:Cmd
+ 26.99%    2.269      1 Template:Warning
+ 18.41%    1.548      1 Template:Box_RED
+ 10.13%    0.852      1 Template:Box
+-->
+</div>
+<!-- Saved in parser cache with key wikidb-upgrade:pcache:idhash:2659-0!canonical and timestamp 20190901051542 and revision id 16063
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://wiki.alpinelinux.org/w/index.php?title=Raspberry_Pi&amp;oldid=16063">http://wiki.alpinelinux.org/w/index.php?title=Raspberry_Pi&amp;oldid=16063</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://wiki.alpinelinux.org/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://wiki.alpinelinux.org/wiki/Category:Installation" title="Category:Installation">Installation</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="https://wiki.alpinelinux.org/w/index.php?title=Special:CreateAccount&amp;returnto=Raspberry+Pi" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.alpinelinux.org/w/index.php?title=Special:UserLogin&amp;returnto=Raspberry+Pi" title="You are encouraged to log in; however, it is not mandatory [Alt+Shift+o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.alpinelinux.org/wiki/Raspberry_Pi" title="View the content page [Alt+Shift+c]" accesskey="c">Page</a></span></li><li id="ca-talk"><span><a href="https://wiki.alpinelinux.org/wiki/Talk:Raspberry_Pi" rel="discussion" title="Discussion about the content page [Alt+Shift+t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label">
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="https://wiki.alpinelinux.org/wiki/Raspberry_Pi">Read</a></span></li><li id="ca-viewsource" class="collapsible"><span><a href="https://wiki.alpinelinux.org/w/index.php?title=Raspberry_Pi&amp;action=edit" title="This page is protected.
+You can view its source [Alt+Shift+e]" accesskey="e">View source</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.alpinelinux.org/w/index.php?title=Raspberry_Pi&amp;action=history" title="Past revisions of this page [Alt+Shift+h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label" style="">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Alpine Linux" title="Search Alpine Linux [Alt+Shift+f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.alpinelinux.org/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-Welcome" aria-labelledby="p-Welcome-label">
+			<h3 id="p-Welcome-label">Welcome</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Installation"><a href="https://wiki.alpinelinux.org/wiki/Installation">Installation</a></li><li id="n-FAQ"><a href="https://wiki.alpinelinux.org/wiki/FAQ">FAQ</a></li><li id="n-Tutorials-and-Howtos"><a href="https://wiki.alpinelinux.org/wiki/Tutorials_and_Howtos">Tutorials and Howtos</a></li><li id="n-Contribute"><a href="https://wiki.alpinelinux.org/wiki/Contribute">Contribute</a></li><li id="n-Developer-Documentation"><a href="https://wiki.alpinelinux.org/wiki/Developer_Documentation">Developer Documentation</a></li><li id="n-Glossary"><a href="https://wiki.alpinelinux.org/wiki/Glossary">Glossary</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Services" aria-labelledby="p-Services-label">
+			<h3 id="p-Services-label">Services</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Main-Site"><a href="https://alpinelinux.org/" rel="nofollow">Main Site</a></li><li id="n-Git-Repositories"><a href="https://git.alpinelinux.org/" rel="nofollow">Git Repositories</a></li><li id="n-Bug-Tracker"><a href="https://bugs.alpinelinux.org/projects/alpine/issues" rel="nofollow">Bug Tracker</a></li><li id="n-Forums"><a href="https://forum.alpinelinux.org/forum" rel="nofollow">Forums</a></li><li id="n-Mailing-Lists"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:Mailing_lists">Mailing Lists</a></li><li id="n-IRC-Channels"><a href="https://wiki.alpinelinux.org/wiki/IRC">IRC Channels</a></li><li id="n-Downloads"><a href="https://alpinelinux.org/downloads" rel="nofollow">Downloads</a></li><li id="n-Package-Database"><a href="https://pkgs.alpinelinux.org/packages" rel="nofollow">Package Database</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Wiki" aria-labelledby="p-Wiki-label">
+			<h3 id="p-Wiki-label">Wiki</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Recent-Changes"><a href="https://wiki.alpinelinux.org/wiki/Special:RecentChanges">Recent Changes</a></li><li id="n-Site-Index"><a href="https://wiki.alpinelinux.org/wiki/Special:PrefixIndex">Site Index</a></li><li id="n-Categories"><a href="https://wiki.alpinelinux.org/wiki/Special:Categories">Categories</a></li><li id="n-Help"><a href="https://wiki.alpinelinux.org/wiki/Category:Wiki">Help</a></li><li id="n-Maintenance"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:Wiki_maintenance">Maintenance</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Toolbox</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.alpinelinux.org/wiki/Special:WhatLinksHere/Raspberry_Pi" title="A list of all wiki pages that link here [Alt+Shift+j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.alpinelinux.org/wiki/Special:RecentChangesLinked/Raspberry_Pi" rel="nofollow" title="Recent changes in pages linked from this page [Alt+Shift+k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.alpinelinux.org/wiki/User:Dubiousjim/Special" title="A list of all special pages [Alt+Shift+q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://wiki.alpinelinux.org/w/index.php?title=Raspberry_Pi&amp;printable=yes" rel="alternate" title="Printable version of this page [Alt+Shift+p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://wiki.alpinelinux.org/w/index.php?title=Raspberry_Pi&amp;oldid=16063" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.alpinelinux.org/w/index.php?title=Raspberry_Pi&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 21 July 2019, at 15:14.</li>
+								<li id="footer-info-copyright"><div align="right"><div id="footer-inner"> 
+  <p><a href="https://wiki.alpinelinux.org/wiki/Privacy_Policy#Copyright">© Copyright 2008-2019 Alpine Linux Development Team</a> 
+  all rights reserved </p></div></div></li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:Privacy_policy" title="Alpine Linux:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:About" title="Alpine Linux:About">About</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:General_disclaimer" class="mw-redirect" title="Alpine Linux:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="Raspberry%20Pi%20-%20Alpine%20Linux_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.040","walltime":"0.041","ppvisitednodes":{"value":274,"limit":1000000},"ppgeneratednodes":{"value":747,"limit":1000000},"postexpandincludesize":{"value":6932,"limit":2097152},"templateargumentsize":{"value":2000,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":329,"limit":5000000},"timingprofile":["100.00%    8.406      1 -total"," 39.44%    3.315     25 Template:Cmd"," 26.99%    2.269      1 Template:Warning"," 18.41%    1.548      1 Template:Box_RED"," 10.13%    0.852      1 Template:Box"]},"cachereport":{"timestamp":"20190901051542","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":32});});</script>
+	
+
+<div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html class="client-js" dir="ltr" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>DIY Fully working Alpine Linux for Allwinner and Other ARM SOCs - Alpine Linux</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs","wgTitle":"DIY Fully working Alpine Linux for Allwinner and Other ARM SOCs","wgCurRevisionId":15602,"wgRevisionId":15602,"wgArticleId":3421,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Hardware"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs","wgRelevantArticleId":3421,"wgRequestId":"791f7805eefad038dfe44b94","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@03q4xak",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="DIY%20Fully%20working%20Alpine%20Linux%20for%20Allwinner%20and%20Other%20ARM%20SOCs%20-%20Alpine%20Linux_files/load.css">
+<script async="" src="DIY%20Fully%20working%20Alpine%20Linux%20for%20Allwinner%20and%20Other%20ARM%20SOCs%20-%20Alpine%20Linux_files/load.php"></script>
+<style>
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:0;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;padding:0;margin:0}.suggestions-result{color:#000;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#2a4b8d;color:#fff}.suggestions-special .special-label{color:#72777d;text-align:left}.suggestions-special .special-query{color:#000;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:#c8ccd1}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:#fff}.highlight{font-weight:bold}
+@media screen {
+	.tochidden,.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.toctoggle{font-size:94%}}
+@media print {
+	.toc.tochidden,.toctoggle{display:none}}</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:#000;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:#fff}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;text-overflow:ellipsis;white-space:nowrap}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<meta name="generator" content="MediaWiki 1.31.1">
+<link rel="shortcut icon" href="https://wiki.alpinelinux.org/images/favicon.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.alpinelinux.org/w/opensearch_desc.php" title="Alpine Linux (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.alpinelinux.org/w/api.php?action=rsd">
+<link rel="license" href="https://wiki.alpinelinux.org/wiki/MediaWiki:Copyright">
+<link rel="alternate" type="application/atom+xml" title="Alpine Linux Atom feed" href="https://wiki.alpinelinux.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Vector&amp;sync=1"></script><![endif]-->
+<script src="DIY%20Fully%20working%20Alpine%20Linux%20for%20Allwinner%20and%20Other%20ARM%20SOCs%20-%20Alpine%20Linux_files/load_002.php"></script></head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs rootpage-DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">DIY Fully working Alpine Linux for Allwinner and Other ARM SOCs</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Alpine Linux</div>				<div id="contentSub"></div>
+								<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><div class="mw-parser-output"><center>
+<table style="width: 48em; padding:2px; margin:0; margin-bottom:10px; background-color:#f6f6f6; border:1px solid #aaa; -moz-border-radius-bottomright: 0.5em; -moz-border-radius-bottomleft: 1em; border-radius-bottomright: 0.5em; border-radius-bottomleft: 1em; -webkit-border-bottom-right-radius: 0.5em; -webkit-border-bottom-left-radius: 1em;">
+<tbody><tr>
+<td><div style="font-size: 1.5em; font-weight:bold; text-align:center;"> <div class="floatleft"><img alt="Tango-edit-clear.png" src="DIY%20Fully%20working%20Alpine%20Linux%20for%20Allwinner%20and%20Other%20ARM%20SOCs%20-%20Alpine%20Linux_files/Tango-edit-clear.png" width="48" height="48"></div> This material needs wiki syntax or style improvements ... </div><p style="text-align: center; font-size: 87%;">Please feel free to help us clean it up.</p>
+</td></tr></tbody></table></center>
+<center>
+<table style="width: 48em; padding:2px; margin:0; margin-bottom:10px; background-color:#f6f6f6; border:1px solid #aaa; -moz-border-radius-bottomright: 0.5em; -moz-border-radius-bottomleft: 1em; border-radius-bottomright: 0.5em; border-radius-bottomleft: 1em; -webkit-border-bottom-right-radius: 0.5em; -webkit-border-bottom-left-radius: 1em;">
+<tbody><tr>
+<td><div style="font-size: 1.5em; font-weight:bold; text-align:center;"> <div class="floatleft"><img alt="Tango-go-next.png" src="DIY%20Fully%20working%20Alpine%20Linux%20for%20Allwinner%20and%20Other%20ARM%20SOCs%20-%20Alpine%20Linux_files/Tango-go-next.png" width="48" height="48"></div> This page is proposed for moving ... </div><p style="text-align: center; font-size: 87%;">It should be renamed to <a href="https://wiki.alpinelinux.org/w/index.php?title=ARM_SOCs&amp;action=edit&amp;redlink=1" class="new" title="ARM SOCs (page does not exist)">ARM SOCs</a>.
+(<a href="https://wiki.alpinelinux.org/w/index.php?title=Talk:DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;action=edit&amp;redlink=1" class="new" title="Talk:DIY Fully working Alpine Linux for Allwinner and Other ARM SOCs (page does not exist)">Discuss</a>)</p>
+</td></tr></tbody></table></center>
+<p>THIS WORKS - TESTED
+</p><p><i>Please dont hesitate to contact me at atlury@gmail.com or on oneinsect@gmail.com.</i>
+</p><p><i><b>MAINLINE KERNEL with MAINLINE U-Boot</b></i>
+</p>
+<div id="toc" class="toc"><div class="toctitle" dir="ltr" lang="en"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a role="button" tabindex="0" class="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Prologue"><span class="tocnumber">1</span> <span class="toctext">Prologue</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Comprehensive_Introduction"><span class="tocnumber">2</span> <span class="toctext">Comprehensive Introduction</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Boot-loaders_aka_U-Boot"><span class="tocnumber">3</span> <span class="toctext">Boot-loaders aka U-Boot</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#What_to_compile"><span class="tocnumber">4</span> <span class="toctext">What to compile</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Compiling_U-boot"><span class="tocnumber">5</span> <span class="toctext">Compiling U-boot</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Compiling_Kernel_with_.dtb_file"><span class="tocnumber">6</span> <span class="toctext">Compiling Kernel with .dtb file</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Creating_Initramfs_File"><span class="tocnumber">7</span> <span class="toctext">Creating Initramfs File</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Creating_modloop_File"><span class="tocnumber">8</span> <span class="toctext">Creating modloop File</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#How_to_burn_to_SD_Card"><span class="tocnumber">9</span> <span class="toctext">How to burn to SD Card</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Conclusion"><span class="tocnumber">10</span> <span class="toctext">Conclusion</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#For_debugging_purposes_only"><span class="tocnumber">11</span> <span class="toctext">For debugging purposes only</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Prologue">Prologue</span></h2>
+<ul><li>Please note that most of the below is specific to Nanopi m1 but can be extended to any ARM Soc with understanding</li>
+<li>Nanopi m1 and Orange Pi PC are very similar except for 512MB more 
+RAM in Orange Pi PC, they have almost similar specifications (USBs, 
+Ethernet, I/Os etc)</li></ul>
+<p>Sometimes these SOCs are always being fed with constant 1.3V, like 
+NANO Pi m1 in this case or an Orange PI One. An Orange Pi PC however has
+ programable voltage generator and will reduce voltage.
+</p><p>Primitive voltage regulator feed the H3 all the time with 1.3V in
+ some boards. In this mode throttling is rather inefficient since 
+temperatures do not decrease that much when only clockspeed will be 
+reduced. Therefore expect severe performance problems unless you choose 
+to apply a large heatsink and an additional fan.
+</p><p>Sometimes you have to modify your dts file if your board has a 
+fixed voltage regulator to limit the temperature and prevent the board 
+from completing burning out when you are not using a heat-sink. However I
+ would suggest you use some kind of passive/active cooling for H3 
+boards.
+</p><p>At the time of writing this article the Nanopi M1 still doesnt 
+have its own .dtb file, hence we use a similar board .dtb file (Orange 
+Pi PC).
+</p><p>You are free to try legacy kernels and the process may vary a 
+bit, please linux-sunxi.org for more information and similar sites. 
+</p><p><b>Infact your SOC may not be supported by mainline kernel itself, however you can still use alpine linux.</b>
+<b></b>
+</p><p>Lot of people are writing various .dtb files for example below is
+ mainline kernel dts configuration for passive cooling of h3 based 
+boards with fixed voltage regulator
+</p><p><a rel="nofollow" class="external free" href="https://github.com/megous/linux/wiki/Fixed-voltage-regulator-test">https://github.com/megous/linux/wiki/Fixed-voltage-regulator-test</a>
+</p><p>Written for orange pi one, when treating it as if it had a fixed 
+voltage regulator and it was limiting temperature to ~75°C during stress
+ test. You are free to play around. The internet is huge. Hang out in 
+the IRC channels.
+</p><p>There is a work around for issues wherein at times display doesnt
+ show up, if you use say a DVI to HDMI converter etc. Suggest you use 
+VGA to HDMI or play around with the settings of boot.scr and other 
+files.
+</p><p><i><b>We expect as the Alpinelinux kernel versions progress 
+further, you will be able to use Alpinelinux more directly without 
+recompiling your own kernel, initramfs files etc</b></i>
+</p>
+<h2><span class="mw-headline" id="Comprehensive_Introduction">Comprehensive Introduction</span></h2>
+<p>Why do we need alpine linux when there are so many xyz distros 
+available? Well it is one the most lightweight platforms with hot swap 
+support for SD-cards and USB devices. There are options for allocation 
+of SD-card free space for application storage.
+</p><p>There are possibilities to completely upgrade a device running 
+remotely with minimum downtime. Console logins are possible with USB 
+null modems for field servicing. Most importantly you can be rest 
+assured that it can survive against power cuts, restarts. For devices 
+without onboard mmc, especially working on sd-card its way more 
+important.
+</p><p>The philosophy of commit only when required, keeps the entire OS 
+read-only and in-memory without touching the storage at all. Thus 
+devices can survive for longer times without crash.
+</p><p>Arm devices unlike x86 dont come with bios in general. BIOS in 
+x86 PCs is generally, a firmware configuring and connecting the hardware
+ to the operating system and it offers support for a variety of OS and 
+supports new OS versions. 
+</p><p>ARM use a different approach involving a boot loader for hardware
+ configuration and operating system start-up. The boot loader is 
+developed specifically for the application, adapted to one well-defined 
+hardware SOC configuration, one operating system and only one version of
+ it, which means you cannot probably use it for other SOCs without 
+significant changes.
+</p><p>We here generally talk about Allwinner especially H3 SOCs but you
+ could probably apply this philosophy to other SOCs. The nanopi m1, 
+Orange pi pc and Orange pi lite are only around $10 making them great 
+home servers, firewalls for lowest possible cost.
+</p><p>A linux os cannot be started just like that on an ARM Device, 
+without a small amount of machine specific code to initialize that 
+system. 
+</p><p>There are typically 4 stages involved in the ARM Device boot-up process
+</p>
+<ul><li>(stage 1) ROM - Reads from initialized persistent storage (selected by boot mode), loads SPL into internal Ram</li>
+<li>(stage 2) SPL Loader - SPL once loaded does additional setup and loads from persistent storage bootloader (u-boot) into DDR RAM</li>
+<li>(stage 3) U-boot - U-boot once loaded continues the processor setup and reads the Linux Kernel into DDR RAM</li>
+<li>(stage 4) Kernel - Once Kernel is loaded, it boots Linux and initializes the user run time environment</li></ul>
+<p>The first stage of the boot process is the Secondary Program Loader 
+(SPL). This preliminary piece of code is responsible for board 
+initialization, loading the u-boot binary (“secondary program”) and 
+handling the control flow over to the u-boot main program. It is device 
+specific, and is often provided as a closed source binary blob by the 
+SoC vendor.
+</p><p>The secondary program loader (SPL) and the u-boot binary reside 
+in a special on-board flash memory region or on the first sectors of the
+ uSD/eMMC card. Arm devices use microSD or eMMC modules for storing the 
+SPL and u-boot binary
+</p><p>At the second stage of the boot process, the u-boot main program 
+is executed. U-boot first looks for a custom environment stored at a 
+reserved space on the microSD or eMMC module, or falls back to the 
+compile time default environment if needed. At this time, you can 
+interrupt the automatic boot process by pressing a key on your serial 
+console, which starts an interactive u-boot shell. The u-boot variable 
+called <b>bootdelay</b> specifies the number of seconds to wait for a keypress before continuing automatic boot.
+</p><p>The automatic boot process executes a special u-boot macro, called bootcmd, which loads and executes the following procedures:
+</p>
+<pre>1. (opt.) a custom u-boot environment: uEnv.txt
+2. (opt.) a precompiled u-boot macro: boot.scr
+3. the kernel image, e.g. vmlinuz
+4. (opt.) the device tree binary, e. g. .dtb
+5. (opt.) the initial ramdisk, e. g. initramfs
+</pre>
+<p>The third stage is the loading of the Linux kernel. However, before 
+the Linux kernel takes control, u-boot passes a command line to the 
+kernel containing essential parameters.
+</p><p>For example in u-boot you could set bootargs for it pass to the kernel some parameters
+</p>
+<ul><li>setenv bootargs /boot/vmlinuz-4.6.0-rc1-sunxi earlyprintk 
+modules=loop,squashfs,sd-mod,usb-storage modloop=/boot/modloop-sunxi 
+console=${console} rootwait panic=10</li></ul>
+<p>Parameters can be viewed after the operating system has booted by typing the following into a Terminal window (just an example):
+</p>
+<ul><li>cat /proc/cmdline root=/dev/mmcblk0p2 rootwait rw 
+console=ttyS0,115200n8 console=tty0 no_console_suspend vdaccfg=0xa00 
+logo=osd1,loaded,0x7900000,720p,full dmfc=3 cvbsmode=576cvbs 
+hdmimode=1080p m_bpp=32 vout=hdmi disablehpd=true</li></ul>
+<p>The kernel initializes the hardware, mount the root file-system 
+(according to the root=.. kernel parameter) and passes the control flow 
+to /sbin/init.
+</p><p>The Linux kernel consists of the following components:
+</p>
+<ul><li>Kernel image 32 bit platform: &lt;boot-partition&gt;/zImage or 
+&lt;boot-partition&gt;/uImage, depending on your u-boot's capabilities 
+and configuration</li>
+<li>Kernel image 64 bit platform: &lt;boot-partition&gt;/Image</li>
+<li>Device tree binary, a low level device description, specific to your device (&lt;boot-partition&gt;/&lt;board&gt;.dtb)</li>
+<li>Kernel modules (/lib/modules/&lt;kernel-version&gt;/*)</li>
+<li>Device firmware (/lib/firmware/*)</li>
+<li>Kernel C header files (/usr/include/linux)</li></ul>
+<p>These components are build out of the kernel sources with the help of
+ the make utility. Usually the kernel image and the device tree binary 
+are loaded from a small vfat boot partition (mounted as /boot or 
+/media/boot), whereas the rest resides in the root file system. 
+</p><p>However for our case here, we will have one raw u-boot sector followed by a large fat partition 
+</p><p>Each stage adds functionality. It is important to note that SPL, 
+U-Boot and the Linux Kernel are all statically linked to start running 
+at specific locations from a memory map defined by the CPU. That memory 
+map is nothing but a layout that defines where both internal memory and 
+DDR are mapped to. 
+</p><p>In here we are concerned with SD-Cards, and depending on how the 
+SD card is connected, the location to where to write the data to can be 
+different. 
+</p><p>OKAY WAIT!!! WRITING DATA??? 
+</p><p>Dont be confused, yes you will need to compile from source the 
+SPL Loader and write it to SD-Card in a particular way and then compile 
+u-boot from source and write it in a particular and same goes for the 
+rest. Otherwise how will you boot our favorite alpine linux?
+</p><p>But where do you get the sources? Generally if the SOC is 
+supported in Linux (its called mainline) you can directly use the latest
+ kernel, otherwise you will need to get the sources from the SOC 
+manufacturer.
+</p><p>Below is a SD-CARD layout for typical Allwinner which generally 
+combine U-boot with the SPL loader from block 8. This then loads 
+initramfs etc.
+</p><p>"start" is a 1k-block number here. (Multiply it by two to get the
+ corresponding sector number - assuming 512 byte sectors). This layout 
+works generally for Linux Mainline Kernels 4.x and above
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>start
+</th>
+<th>size
+</th>
+<th>usage
+</th></tr>
+<tr>
+<td>0</td>
+<td>8KB</td>
+<td>Unused, available for partition table
+</td></tr>
+<tr>
+<td>8</td>
+<td>1024KB</td>
+<td>Initial SPL loader + u-boot (just burn using dd)
+</td></tr>
+<tr>
+<td>1024</td>
+<td>till end</td>
+<td>vmlinuz + initramfs + modloop + dtb + Alpine apks folder (format vfat + enable boot flag, preferred from 2048)
+</td></tr></tbody></table>
+<p><b>Please noted in general the third fat partition is from 2048 till end</b>
+</p><p>Notice that while discussing above, I told there are generally 
+four stages, I have infact combined SPL with U-boot and shown as one 
+stage; indeed it is now possible to generate a single file say <b>"u-boot-sunxi-with-spl.bin"</b> while compiling.
+</p><p>And yes, you saw it right, the partition that holds vmlinuz eta 
+al is actually fat and no we will NOT have any issues with symbolic 
+links etc. Yes its not your typical rootfs.
+</p><p><b>The idea is that Alpinelinux beautifully loads and compresses 
+into memory the entire OS and maintains it there, so aspects of symbolic
+ links issues etc never come into picture, as the fat partition is never
+ touched and whenever any changes occur and if and only they are 
+committed, they are saved in a pre-compressed tar.gz archive, saved and 
+then loaded back on fly during the next boot</b> 
+</p>
+<h2><span class="mw-headline" id="Boot-loaders_aka_U-Boot">Boot-loaders aka U-Boot</span></h2>
+<p>Let us begin. The first is to understand U-boot.
+</p><p>Distros like alpine linux for that matter any linux do not need to manipulate any kind of bootloader-specific
+configuration data to indicate which storage device the system should boot from.
+</p><p>Distros simply need to copy the boot configuration files in an 
+ext2/3/4 or FAT partition, mark the partition bootable (via
+the MBR bootable flag, or GPT legacy_bios_bootable attribute), and 
+U-Boot (or any other bootloader) will find those boot files and execute 
+them. This is conceptually identical to creating a grub2 configuration 
+file on a desktop PC.
+</p><p>Note that in the absence of any partition that is explicitly marked bootable, <b>U-Boot falls back to searching the first valid partition of a disk for boot configuration files</b>.
+ Other bootloaders are recommended to do the same, since I believe that 
+partition table bootable flags aren't so commonly used outside the realm
+ of x86 PCs.
+</p><p>U-Boot can also search for boot configuration files from a TFTP 
+server. The standard format for boot configuration files is that of 
+extlinux.conf, as
+handled by U-Boot's "syslinux" (disk) or "pxe boot" (network).
+</p><p>U-Boot searches for /extlinux/extlinux.conf then /boot/extlinux/extlinux.conf on disk, or pxelinux.cfg/default over the network.
+</p><p>One example extlinux.conf generated by the Alpine Linux installer is:
+</p>
+<pre> LABEL grsec
+ MENU DEFAULT
+ MENU LABEL Linux grsec
+ LINUX /boot/vmlinuz-grsec
+ INITRD /boot/initramfs-grsec
+ DEVICETREEDIR /boot/dtbs
+ APPEND BOOT_IMAGE=/boot/vmlinuz-grsec modules=loop,squashfs,sd-mod,usb-storage modloop=/boot/modloop-grsec console=${console}
+</pre>
+<p>Another example extlinux.conf is:
+</p>
+<pre> LABEL Linux Mailine 4.6RC2
+ LINUX /boot/vmlinuz-4.6.0-rc1-sunxi
+ INITRD /boot/initramfs-new.uImage
+ FDT /boot/sun8i-h3-orangepi-pc.dtb
+ APPEND BOOT_IMAGE=/boot/vmlinuz-4.6.0-rc1-sunxi modules=loop,squashfs,sd-mod,usb-storage modloop=/boot/modloop-sunxi console=${console}
+</pre>
+<h2><span class="mw-headline" id="What_to_compile">What to compile</span></h2>
+<p>What are you basically looking for? What files do you need to 
+compile, how and where do you need to compile from? And where do you 
+need to put them? How do you need to put them? Well dont worry we will 
+cover them here.
+</p><p>You will need the following files (incase of mainline or 4.x 
+latest kernels incase your SOC is supported - In our case yes Allwinner 
+H3)
+</p>
+<ul><li>U-boot bootloader (aka u-boot-sunxi-with-spl.bin file say for Orange pi pc Allwinner H3) - compiled separately</li>
+<li>Device specific .dtb file (in here called sun8i-h3-orangepi-pc.dtb) generated as part of your mainline kernel compilation</li>
+<li>Linux Kernel Image either uImage/zImage (In our case zImage called vmlinuz-4.6-rc1-sunxi)</li>
+<li>Initramfs file (what is it? you will learn as we progress)</li>
+<li>modloop file (what is it again? you will learn as we progress)</li>
+<li>boot.scr or extlinux.conf file for telling U-boot where from and how to find and load all above files into memory</li></ul>
+<p><b>Note that we will be using boot.scr going forward instead of 
+extlinux.conf, u-boot generally searches /boot.scr or /boot/boot.scr</b>
+</p><p>Incase of legacy kernels (3.x etc) you will need the following which we will not cover here
+</p>
+<ul><li>uImage (linux kernel)</li>
+<li>script.bin (converted from fex format, notice if we have fex, we dont need dtb files here)</li>
+<li>ext4/ext3 rootfs file system</li>
+<li>U-boot bootloader etc</li></ul>
+<h2><span class="mw-headline" id="Compiling_U-boot">Compiling U-boot</span></h2>
+<p>You can follow this process or compile it along with Armbian kernel 
+in the next section. Assuming below that you are building on an x64 bit 
+ubuntu 14.04 LTS
+</p>
+<ul><li>git clone <a rel="nofollow" class="external free" href="git://git.denx.de/u-boot.git">git://git.denx.de/u-boot.git</a></li></ul>
+<p>Determine your build target aka your board. Go to your u-boot tree 
+and search in the directory configs/ for your board, the file name looks
+ like &lt;board_name&gt;_defconfig. So, if your device is orange pi pc 
+your build target is orangepi_pc_defconfig
+</p>
+<ul><li>make CROSS_COMPILE=arm-linux-gnueabihf- &lt;board_name&gt;_defconfig</li></ul>
+<ul><li>make CROSS_COMPILE=arm-linux-gnueabihf- menuconfig (optional in-case you want to play with menuconfig)</li></ul>
+<ul><li>make CROSS_COMPILE=arm-linux-gnueabihf-</li></ul>
+<p>When compiling natively on ARM board, omit the CROSS_COMPILE=…
+</p><p>When the build is completed, there will be <b>u-boot-sunxi-with-spl.bin</b> available in your u-boot tree.
+</p><p>create a file boot.cmd and configure it as above.
+</p>
+<h2><span class="mw-headline" id="Compiling_Kernel_with_.dtb_file">Compiling Kernel with .dtb file</span></h2>
+<p>The first and foremost thing to compiling a kernel is to verify your 
+SOC is supported by mainline linux kernel. The kernel must also have 
+these options enabled and compiled in, instead of a module (better) 
+</p>
+<pre>CONFIG_SQUASHFS=y The squashfs 4.0 is in "misc" under "filesystems"
+</pre>
+<pre>CONFIG_BLK_DEV_LOOP=y This is under "Device drivers" -&gt; "Block devices" -&gt; "Loopback device support"
+</pre>
+<ul><li>[*]Enable loadable module support ---&gt;</li>
+<li>Device Drivers ---&gt;Graphics support ---&gt;Frame buffer Devices 
+---&gt;[*]support for frame buffer devices ---&gt;[*]Simple framebuffer 
+support</li>
+<li>Device Drivers ---&gt;Graphics support ---&gt;Console display driver support ---&gt;[*]Framebuffer Console support</li></ul>
+<p>simplefb is a quick and easy way to get a display up on a HDMI 
+monitor is to build U-Boot with sunxi cfb console support and Don't 
+forget to change your console in your boot.cmd/boot.scr to console=tty1 
+to enable the simple framebuffer driver.
+</p><p>Pickup stable release 
+</p>
+<ul><li>git clone <a rel="nofollow" class="external free" href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git</a></li></ul>
+<p>or pick up the sunxi-next branch maintained with all the inclusions 
+that have been accepted, merged and will be included in the next stable 
+release
+</p>
+<ul><li>git clone <a rel="nofollow" class="external free" href="git://github.com/linux-sunxi/linux-sunxi.git">git://github.com/linux-sunxi/linux-sunxi.git</a> -b sunxi-next</li></ul>
+<ul><li>make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- sunxi_defconfig</li></ul>
+<ul><li>make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig (you
+ want to include above squashfs and blk_dev_loop with menuconfig)</li></ul>
+<p>to build run the following and after the compilation ends, you should
+ have generated both the zImage in arch/arm/boot, and a device tree blob
+ (.dtb) in arch/arm/boot/dts.
+</p>
+<ul><li>ARCH=arm CROSS_COMPILE=&lt;toolchain-prefix&gt; make zImage dtbs</li></ul>
+<p>This device tree blob (or simply dtb) gives to the kernel the description of the hardware it's currently running on. 
+</p><p>In device tree blob (dtb) goal, it's pretty similar to the FEX 
+scripts that Allwinner uses, yet far more generic. Dont worry remember 
+we shown fex files incase of legacy kernels (3.x etc) converted to 
+script.bin. 
+</p><p>Dtb allows to compile a single kernel image that will run on several platforms.
+</p><p>To identify the dtb file that you will use on your board, first 
+look into arch/arm/boot/dts. You should see a whole bunch of them, most 
+being irrelevant to us because targeting boards based on other ARM SoCs.
+ All the sunxi dtb follow the pattern 
+&lt;family&gt;-&lt;soc&gt;-&lt;board&gt;.dtb 
+</p><p>If you have configured certain drivers as modules, you need to build and install these as well:
+</p>
+<ul><li>ARCH=arm CROSS_COMPILE=&lt;toolchain-prefix&gt; INSTALL_MOD_PATH=&lt;any-path-you-like&gt; make modules modules_install</li></ul>
+<p>After the build succeeds, you can find the modules in the supplied INSTALL_MOD_PATH directory.
+</p><p><b>Armbian has an easy way of compiling kernel as well (just incase), so look below:</b> - Till we fill this section with Alpine way of compiling things
+</p>
+<ul><li>Create a VM Ubuntu 14.04 LTS x64 server image with 40GB of disk 
+(dont need install any compilation tools, the scripts will download 
+suitable)</li>
+<li>apt-get -y -qq install git</li>
+<li>git clone --depth 1 <a rel="nofollow" class="external free" href="https://github.com/igorpecovnik/lib">https://github.com/igorpecovnik/lib</a></li>
+<li>cp lib/compile.sh .</li>
+<li>vim compile.sh</li></ul>
+<p>Please make sure you have the following options as follows
+</p>
+<pre>KERNEL_ONLY="yes" //compile only kernel, u-boot and other packages and not buid complete OS image
+KERNEL_CONFIGURE="yes"  //to include your modules
+CLEAN_LEVEL="make,images,debs"
+KERNEL_KEEP_CONFIG="yes"
+</pre>
+<p>Note that you can add your patches in the patches folder. All patches must have file name extension .patch.
+</p><p>or use
+</p>
+<ul><li>./compile.sh BRANCH=dev BOARD=orangepih3 KERNEL_ONLY=yes PROGRESS_DISPLAY=plain COMPRESS_OUTPUTIMAGE=yes RELEASE=jessie</li></ul>
+<p>Let us go with first option. You will prompted to select board. 
+</p><p>Select <b>orangepih3</b> and then select <b>dev</b> branch
+</p><p>Select your kernel config options as told above (squashfs modules etc).
+</p><p>Once the compilation is finished in the output folder you will notice the following files
+</p><p><b>DTB FILE</b>
+</p>
+<pre>linux-dtb-dev-sunxi_5.07_armhf.deb -- untar it and it will contain boot/dtb-4.6.0-rc1-sunxi/sun8i-h3-orangepi-pc.dtb
+</pre>
+<p><b>UBOOT+SPL FILE</b>
+</p>
+<pre>linux-u-boot-dev-orangepih3_5.07_armhf.deb -- untar it and it will contain usr/lib/linux-u-boot-dev-orangepih3_5.07_armf/u-boot-sunxi-with-spl.bin
+</pre>
+<p><b>VMLINUZ KERNEL</b>
+</p>
+<pre>linux-image-dev-sunxi_5.07_armhf.deb -- untar it and it will contain boot/vmlinuz-4.6.0-rc1-sunxi
+</pre>
+<p><b>MODLOOP FILES</b>
+</p>
+<pre>linux-image-dev-sunxi_5.07_armhf.deb -- untar it (it should ultimately be in lib/modules/4.6.0-rc1-sunxi)
+linux-firmware-image-dev-sunxi_5.07_armhf.deb -- untar it (it should ultimately be in /lib/modules/firmware)
+</pre>
+<p><b>INITRAMFS FILES</b>
+</p>
+<pre>linux-image-dev-sunxi_5.07_armhf.deb -- untar it (it should ultimately be in lib/modules/4.6.0-rc1-sunxi)
+linux-firmware-image-dev-sunxi_5.07_armhf.deb -- untar it (it should ultimately be in /lib/firmware)
+</pre>
+<p>MAKE SURE YOU ALSO GET Generic ARM Image from <a rel="nofollow" class="external free" href="http://www.alpinelinux.org/downloads/">http://www.alpinelinux.org/downloads/</a>
+</p><p>EXTRACT THE tar.gz file and you will need the <b>initramfs-grsec</b> and the <b>apk folder</b>
+</p><p>Next proceed to below sections.
+</p><p><b>Alpinelinux is expected to have a bleeding edge release option soon along with LTS releases.</b>
+</p>
+<h2><span class="mw-headline" id="Creating_Initramfs_File">Creating Initramfs File</span></h2>
+<p>The purpose of initrd and initramfs (also known, generically, as 
+"initial RAM disk") is similar: they contain a minimal root file-system,
+ along with some scripts. When the kernel boots, if it is instructed to 
+use an initrd or initramfs (done with boot loader configuration) it 
+unpacks the file in RAM, chroot()s into it, and run some predefined 
+scripts. Finally, the "real" root file system is mounted, the kernel 
+switches to it and the normal init process can begin.
+</p><p>Why do we need an initial RAM disk in the first place? You're 
+probably wondering this if you use to build your own kernel with the 
+necessary modules for your hardware built-in. In that case, you almost 
+never need an initial RAM disk.
+</p><p>But many distributions have to ship a binary kernel that should 
+work on most, or even all, different combinations of hardware, storage, 
+file-systems, etc. They can't obviously build all the possible modules 
+into the kernel. So they ship a minimal, generic kernel, and use an 
+initial RAM disk that contains most hardware modules and some logic to 
+detect which modules need to be loaded to be able to continue to boot 
+the system normally (ie from the hard drive).
+</p><p>An initramfs contains at least one file called /init. This file 
+is executed by the kernel as the main init process (PID 1). It has to do
+ all the work. In addition, there can be any number of additional files 
+and directories that are required by /init. They are usually files 
+you'll also find on any other root filesystem, such as /dev for device 
+nodes, /proc for kernel information, /bin for binaries, and so on. The 
+structure of an initramfs can be simple, or it can be complicated, 
+depending on what you are planning to do.
+</p><p>When the kernel mounts the initramfs, your target root partition 
+is not yet mounted, so you can't access any of your files. That means 
+there is nothing but the initramfs. So everything you need, everything 
+you want, you have to include it in your initramfs. If you want a shell,
+ you have to include it in your initramfs. If you want to mount 
+something, you need a mount utility. If you need to load a module, your 
+initramfs has to provide both the module, as well as a utility to load 
+it. If the utility depends on libraries in order to work, you have to 
+include the libraries as well. This seems complicated, and it is, 
+because the initramfs has to function independently.
+</p><p>This means that it's possible to boot the kernel, load some 
+modules and run some tasks (from the RAM disk), and finally start the 
+normal boot process (/sbin/init etc.). 
+</p><p>The initial RAM disk must contain a fully functional file system, including some essential programs and libraries. 
+</p><p>For space reasons, small footprint binaries are usually used (eg ash, busybox, or klibc). 
+</p><p>Once the initial RAM disk's job is over and the kernel has 
+switched to the real root file system, the memory used by the RAM disk 
+is freed.
+</p><p>As briefly mentioned, there are two types of initial RAM disk: 
+initrd and initramfs. The main difference is that an initrd contain a 
+raw filesystem image (eg ext2), while an initramfs contains a cpio 
+archive (which, when expanded, produces a directory hierarchy). Note 
+that there are quite a few other differences, not mentioned here. 
+</p><p>In both cases, the image file is compressed (typically with gzip)
+ and the kernel expands and mount it. All the recent Linux distribution 
+that use an initial RAM disk use an initramfs image. initrd is being 
+used less and less. To check if the file you're interested in is an 
+initrd or an initramfs, you can decompress it and feed it to file:
+</p>
+<ul><li>gunzip -c /boot/initrd-2.6 | file -</li></ul>
+<p>Output is as below and that file is a real initrd
+</p>
+<pre>/dev/stdin: Linux rev 1.0 ext2 filesystem data
+</pre>
+<p>Here's what you'd see with an initramfs:
+</p>
+<ul><li>gunzip -c /root/initrams-grsec | file -</li></ul>
+<p>Note the output which says "SVR4 with no CRC" format which will be useful later.
+</p>
+<pre>/dev/stdin: ASCII cpio archive (SVR4 with no CRC)
+</pre>
+<p>Modify initramfs-grsec taken from the Generic ARM Image of Alpinelinux
+</p>
+<hr>
+<p>As said, an initramfs image is a compressed cpio archive, although 
+the file name may sometimes be deceiving; sometimes it still has 
+"initrd" in its name, and also many times it does not end in .gz or 
+other suffixes that indicate compression:
+</p>
+<ul><li>file /root/initrams-grsec</li></ul>
+<pre>/boot/root: gzip compressed data, from Unix, last modified:..., max compression
+</pre>
+<p>Now cpio is an ancient (and a bit weird) archive format. When 
+de-archiving, it needs to read the archive from standard input (GNU cpio
+ also has a --file option to specify the file on the command line). The 
+directory hierarchy is created in the current working directory. So:
+</p>
+<ul><li>mkdir temp</li>
+<li>cd temp</li>
+<li>gunzip -c /boot/root/initrams-grsec | cpio -i</li></ul>
+<p>28293 blocks
+</p>
+<ul><li>ls -l</li></ul>
+<pre>total 64....
+drwxr-xr-x  2 root root 4096 2016-04-28 14:16 bin
+drwxr-xr-x  3 root root 4096 2016-04-28 14:16 dev
+drwxr-xr-x  6 root root 4096 2016-04-28 14:16 etc
+-rwxr-xr-x  1 root root 3355 2016-04-28 14:16 init
+drwxr-xr-x  5 root root 4096 2016-04-28 14:16 lib/modules/4.6.0-rc1-sunxi
+drwxr-xr-x  5 root root 4096 2016-04-28 14:16 lib/modules/firmware
+drwxr-xr-x  2 root root 4096 2016-04-28 14:16 media
+drwxr-xr-x  2 root root 4096 2016-04-28 14:16 newroot
+drwxr-xr-x 12 root root 4096 2016-04-28 14:16 proc
+drwxr-xr-x  3 root root 4096 2016-04-28 14:16 run
+</pre>
+<p>Now you can finally edit and change the contents at will (no space 
+limitations, unlike initrd). When you're done, you have to recreate the 
+compressed cpio archive. Again, cpio is a bit weird when archiving, 
+because it wants to read the names of the files to archive on standard 
+input (and writes the archive on standard output). 
+</p>
+<ul><li>Extract from linux-image-dev-sunxi_5.07_armhf.deb the 
+/lib/modules/4.6.0-rc1-sunxi folder and copy it into the above extracted
+ lib/modules dir.</li></ul>
+<ul><li>Note it may already contain a folder called "4.1.20-0-grsec", it is not required and you can delete it</li></ul>
+<ul><li>Extract from linux-firmware-image-dev-sunxi_5.07_armhf.deb 
+/lib/firmware folder and copy it into the above extracted lib/modules 
+dir</li></ul>
+<p>next you can do as follows:
+</p>
+<ul><li>pwd</li></ul>
+<pre>/root/temp
+</pre>
+<ul><li>find . | cpio -H newc -o | gzip -9 &gt; /root/initramfs-sunxi</li></ul>
+<pre>34207 blocks
+</pre>
+<p>The only catch is that the -H newc option must be specified because 
+the cpio archive contained in the initramfs has to be in the (new) "SVR4
+ with no CRC" portable format, as we saw at the beginning. In case 
+you're wondering, cpio can create archives in other formats: bin, odc, 
+crc, tar, ustar, hpbin, hpodc are those listed in the info page for GNU 
+cpio.
+</p><p>Note that the construct
+</p>
+<ul><li>find . | something</li></ul>
+<p>is generally considered unsafe and to be avoided in shell scripting, 
+because files could have newlines and control characters in them that 
+could deceive the consumer of those filenames. This is generally not the
+ case for filenames contained in an initramfs image, so it is "safe 
+enough" to use here.
+</p>
+<ul><li>change back to /root</li></ul>
+<ul><li>mkimage -n initramfs-sunxi -A arm -O linux -T ramdisk -C none -d initramfs-sunxi initramfs-sunxi-new</li></ul>
+<p>This will create a u-boot compatible ramdisk with its headers.
+</p><p>So your initramfs file is <b>initramfs-sunxi-new</b>
+</p>
+<h2><span class="mw-headline" id="Creating_modloop_File">Creating modloop File</span></h2>
+<p>The modloop file contains the folders like below...
+</p>
+<ul><li>/modules/4.6.0-rc1-sunxi</li>
+<li>/modules/4.6.0-rc1-sunxi/kernel</li>
+<li>/modules/4.6.0-rc1-sunxi/arch</li>
+<li>/modules/firmware</li></ul>
+<p>If you run the following command on modloop-grsec or any other 
+similar modloop file got from the Generic ARM Image of Alpinelinux
+</p>
+<ul><li>file modloop-grsec</li></ul>
+<p>You will realize, it outpus as
+</p>
+<pre>Squashfs filesystem, little endian, version 4.0, xzy bytes, xyz nodes, blocksize: xzy bytes, created...
+</pre>
+<p>You can create a "squashfs-temp" directory and create a sub-dir 
+"modules" and then copy above required files concerning your particular 
+kernel from the above deb extracted sources of Armbian and you are good 
+to go. Then just run the command below.
+</p>
+<ul><li>mksquashfs [source folder] [SquashFS target file] -b 1048576 -comp xz -Xdict-size 100%</li>
+<li>mksquashfs squashfs-temp/ modloop-sunxi -b 1048576 -comp xz -Xdict-size 100%</li></ul>
+<p>Resulting file <b>modloop-sunxi</b> is ready for usage
+</p><p>Please understand that mksquashfs compresses using gzip (deflate)
+ as default, but if the compression time doesn’t matter as much, you 
+should use the xz (LZMA2) option of more recent SquashFS version. Yes 
+please use xz. 
+</p><p>The command above activates xz using the highest possible 
+compression options and the highest possible blocksize (1 MiB instead of
+ the default 128 kiB). Therefore the process of creating the SquashFS 
+file is slower than if using default options, but the resulting file is 
+much smaller and might be (depending on disk IO time etc) a bit faster. 
+LZMA2 is a highly asymmetric compression algorithm, so decompression is 
+much faster than compression
+</p><p>The command compresses the entire source folder into the SquashFS target file.
+</p><p>Make sure that the SquashFS target file doesn’t exist before 
+using this command. If it already exists, mksquashfs tries to update it,
+ but this might yield undesirable results (I didn’t check that, it 
+probably only produces a lot of error messages but a valid output file)
+</p><p>You can mount the resulting file using this command (assuming the target folder exists and is empty):
+</p>
+<ul><li>mount [SquashFS file] [folder you want to mount it in]</li></ul>
+<p>If this command fails, you might need to specify some options explicitly:
+</p>
+<ul><li>mount -o loop -t squashfs [SquashFS file] [folder you want to mount it in]</li></ul>
+<p>If you want to auto-mount the SquashFS, you can also add an _/etc/fstab _entry like this:
+</p>
+<ul><li>[SquashFS file] [folder you want to mount it in] squashfs auto,defaults 0 0</li></ul>
+<h2><span class="mw-headline" id="How_to_burn_to_SD_Card">How to burn to SD Card</span></h2>
+<p>Let us write to the SD-Card, I will assume here that you already have compiled your kernel, u-boot and want to move forward.
+</p><p>When we need to actually put things on the SD card, be careful 
+with dd it can and will wipe your hard disk if you make a mistake. In my
+ case I had an SD card reader so I set things to point at that slot only
+ by using the by-id links from udev. These by-id links which include the
+ serial number which helped to avoid mistakes. The following commands 
+assume you have done the same and are using by-id links.
+</p><p>In linux blank the first 1MB of the card using the following (my sd-card is /dev/sda1
+</p>
+<ul><li><b>dd if=/dev/zero of=/dev/sda bs=1M count=1</b></li></ul>
+<p>But you need to be careful when using dd on special files (i.e., devices).  
+</p><p>For example, the below command will write one tape block of 1024 bytes; 
+</p>
+<ul><li>dd if=(whatever input) of=(a magnetic tape device) bs=1024 count=1</li></ul>
+<p>However, the below command will write 1024 small blocks of one byte each
+</p>
+<ul><li>dd if=(whatever input) of=(a magnetic tape device) bs=1 count=1024</li></ul>
+<p>These are not the same; the 1024 small blocks will take up more room 
+on the tape than the one large block, because of inter-record gaps, and 
+may cause problems for reading the tape.
+</p><p>Now Assuming you have got the file u-boot-sunxi-with-spl.bin, it just has to be burned to sd card using the following command:
+</p>
+<ul><li><b>dd if=u-boot-sunxi-with-spl.bin of=/dev/sda bs=1024 seek=8</b></li></ul>
+<p>Sometimes depending on how you compile; you can generate spl and 
+u-boot separately (it is not recommended by me) you can install the 
+components separately using
+</p>
+<ul><li>dd if=spl/sunxi-spl.bin of=/dev/sda bs=1024 seek=8</li>
+<li>dd if=u-boot.img of=/dev/sda bs=1024 seek=40</li></ul>
+<p>Please note, if you are using old source (v2013.07 or earlier, then the procedure is slightly different)
+</p>
+<ul><li>dd if=spl/sunxi-spl.bin of=/dev/sdX bs=1024 seek=8</li>
+<li>dd if=u-boot.bin of=/dev/sdX bs=1024 seek=32</li></ul>
+<p>Typically for understanding, this is how the layout for SD-Card in above cases is;
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>start
+</th>
+<th>size
+</th>
+<th>usage
+</th></tr>
+<tr>
+<td>0</td>
+<td>8KB</td>
+<td>Unused, available for partition table etc.
+</td></tr>
+<tr>
+<td>8</td>
+<td>32KB</td>
+<td>Initial SPL loader (8 to 24KB prior to 2013.07 and earlier)
+</td></tr>
+<tr>
+<td>40</td>
+<td>504KB</td>
+<td>U-Boot (32KB to 512KB for 2013.07 and earlier)
+</td></tr>
+<tr>
+<td>544</td>
+<td>128KB</td>
+<td>environment
+</td></tr>
+<tr>
+<td>672</td>
+<td>352KB</td>
+<td>reserved
+</td></tr>
+<tr>
+<td>1024</td>
+<td>-</td>
+<td>Free for partitions
+</td></tr></tbody></table>
+<p>Remember to leave sufficient space for all u-boot files when 
+partitioning the card. The u-boot will not have any partition type 
+defined. Recommended to have first fat partition start at sector 2048 
+(1MB)
+</p>
+<ul><li><b>Next Using fdisk, create a new primary partition on the card 
+(so far there are no partitions, only uboot has been burned on the card)</b></li>
+<li><b>Set the starting sector of the card as 2048</b></li>
+<li><b>Now install fat file system on the newly created partition by running mkfs.fat /dev/sda1</b></li>
+<li><b>Using fdisk, set the bootable flag of the partition</b></li></ul>
+<p>When setting the bootable flag of the partition, to create a FAT32 
+partition, if you are using fdisk, the FAT32 partition type is called 
+W95 FAT32 (LBA) and its ID is 0xc
+</p><p>You can rename the sd-card as rootfs...
+</p><p>Please note that with recent U-Boot it's fine to use 
+ext2/ext3/ext4 as boot partition, or as in our case fat file-systems in 
+the any partition.
+</p>
+<hr>
+<p>There is debug serial port which you can use to connect to PC using 
+putty set @ 115200 kbps. You should able to watch the following.
+</p>
+<pre>U-Boot SPL 2016.03-armbian (Apr 08 2016 - 01:09:18)
+DRAM: 512 MiB
+Failed to set core voltage! Can't set CPU frequency
+Trying to boot from MMC1
+U-Boot 2016.03-armbian (Apr 08 2016 - 01:09:18 +0530) Allwinner Technology
+CPU:   Allwinner H3 (SUN8I 1680)
+Model: Xunlong Orange Pi PC
+I2C:   ready
+DRAM:  512 MiB
+MMC:   SUNXI SD/MMC: 0
+*** Warning - bad CRC, using default environment
+In:    serial
+Out:   serial
+Err:   serial
+Net:   No ethernet found.
+starting USB...
+USB0:   USB EHCI 1.00
+USB1:   USB OHCI 1.0
+USB2:   USB EHCI 1.00
+USB3:   USB OHCI 1.0
+USB4:   USB EHCI 1.00
+USB5:   USB OHCI 1.0
+scanning bus 0 for devices... 1 USB Device(s) found
+scanning bus 2 for devices... 1 USB Device(s) found
+scanning bus 4 for devices... 1 USB Device(s) found
+Hit any key to stop autoboot:  0
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+Found /boot/extlinux/extlinux.conf
+Retrieving file: /boot/extlinux/extlinux.conf
+reading /boot/extlinux/extlinux.conf
+232 bytes read in 29 ms (7.8 KiB/s)
+1:      Linux Mailine 4.6RC2
+Retrieving file: /boot/uinitrd
+reading /boot/uinitrd
+ **Unable to read file /boot/uinitrd
+ for failure retrieving initrd
+SCRIPT FAILED: continuing...
+USB device 0: unknown device
+No ethernet found.
+missing environment variable: pxeuuid
+No ethernet found.
+Retrieving file: /boot/extlinux/pxelinux.cfg/0
+No ethernet found.
+Retrieving file: /boot/extlinux/pxelinux.cfg/default-arm-sunxi
+No ethernet found.
+Retrieving file: /boot/extlinux/pxelinux.cfg/default-arm
+No ethernet found.
+Retrieving file: /boot/extlinux/pxelinux.cfg/default
+No ethernet found.
+Config file not found
+No ethernet found.
+=&gt;
+</pre>
+<p>You can use the following to browser through the sd-card
+</p>
+<ul><li>fatls mmc 0:1 boot</li></ul>
+<p>Next step would require simply copying the required files like boot 
+configuration files, kernels etc in the above FAT partition (note there 
+is only one FAT partition and it is marked as bootable) and U-Boot (or 
+any other bootloader) will find those boot files and execute them.
+</p>
+<ul><li><b>Assuming you have compiled vmlinuz-4.6.0-rc1-sunxi, you can 
+create a directory called /boot in the root of micro-sd fat partition 
+and copy it there.</b></li></ul>
+<p><b></b>
+</p>
+<ul><li><b>Similarly create another folder called /boot/dtbs in the micro-sd card and copy the corresponding sun8i-h3-orangepi-pc.dtb file</b></li></ul>
+<ul><li><b>Similarly create boot.scr and copy it to the /boot folder</b></li></ul>
+<p>Basically while booting, U-boot will look for uEnv.txt or boot.scr in
+ the first partition FAT or it will look for extlinux.conf. In here we 
+will define boot.scr. 
+</p><p>boot.scr contains needed uboot commands for loading kernel, initrd, setting kernel parameters and booting.
+</p><p>To create boot.scr first make a u-boot script boot.cmd with the u-boot commands you need for booting the system:
+</p>
+<ul><li>setenv fdt_high ffffffff</li>
+<li>setenv machid 1029</li>
+<li>setenv bootargs earlyprintk /boot/vmlinuz-4.6.0-rc1-sunxi 
+modules=loop,squashfs,sd-mod,usb-storage modloop=/boot/modloop-sunxi 
+console=${console}</li>
+<li>load mmc 0:1 0x43000000 boot/dtbs/sun8i-h3-orangepi-pc.dtb</li>
+<li>load mmc 0:1 0x41000000 boot/vmlinuz-4.6.0-rc1-sunxi</li>
+<li>load mmc 0:1 0x45000000 boot/initramfs-sunxi-new</li>
+<li>bootz 0x41000000 0x45000000 0x43000000</li></ul>
+<p>Then translate this to a boot.scr by using the mkimage command
+</p>
+<pre>mkimage -C none -A arm -T script -d boot.cmd boot.scr
+</pre>
+<p>If you are using an older U-Boot (you shouldn't - Which?), you might require the following line, <b>fdt_high ffffffff</b> to keep the extracted kernel from overwriting the device tree configuration, however in general you dont require it.
+</p><p>setenv is for setting flags in the u-boot environment
+</p><p>The bootm/bootz command is used to start operating system images.
+ From the image header it gets information about the type of the 
+operating system, the file compression method used (if any), the load 
+and entry point addresses, etc. The command will then load the image to 
+the required memory address, uncompressing it on the fly if necessary. 
+Depending on the OS it will pass the required boot arguments and start 
+the OS at it's entry point.
+</p><p>The first argument to bootm is the memory address (in RAM, ROM or
+ flash memory) where the image is stored, followed by optional arguments
+ that depend on the OS. Load is nothing but loading the file into the 
+RAM location.
+</p><p>Linux requires the flattened device tree blob to be passed at 
+boot time, and bootm expects its third argument to be the address of the
+ blob in memory. 
+</p><p>Second argument to bootm depends on whether an initrd initial 
+ramdisk image is to be used. If the kernel should be booted without the 
+initial ramdisk, the second argument should be given as "-", otherwise 
+it is interpreted as the start address of initrd (in RAM, ROM or flash 
+memory).
+</p><p>To boot a Linux kernel image without a initrd ramdisk image, the following command can be used:
+</p><p>=&gt; bootm ${kernel_addr} - ${fdt_addr}
+If a ramdisk image shall be used, you can type:
+</p><p>=&gt; bootm ${kernel_addr} ${ramdisk_addr} ${fdt_addr}
+Both examples of course imply that the variables used are set to correct
+ addresses for a kernel, fdt blob and a initrd ramdisk image
+</p>
+<pre>bootm &lt;Linux uImage address&gt; &lt;mkimage wrapped ramdisk address&gt; &lt;device tree (dtb) address&gt;
+</pre>
+<p>With the bootm/bootz command, U-Boot is relocating the images before 
+it boots Linux such that the addresses above may not be what the kernel 
+sees. U-Boot also alters the device tree to tell the kernel where the 
+ramdisk image is located in memory (initrd-start and initrd-end). The 
+command sets the r2 register to the address of the device tree in memory
+ which is not done by the go command.
+</p>
+<ul><li><i>Remember the console=${console} is important for you to interact with Alpinelinux once it boots</i></li>
+<li><i>Instead of bootm, you use bootz</i></li>
+<li><i>bootz basically starts a kernel image loaded at the given address in RAM along with other images </i></li>
+<li><i>You could possibly use 0x42000000 for your vmlinuz</i></li>
+<li><i>the setenv machid commands asks nanopi m1 to report itself as orange pi pc as we loading orange pi pc dtb and kernel</i></li>
+<li><i>all the above commands can also be run via the u-boot prompt and examined via the serial debug port without compiling boot.cmd</i></li></ul>
+<p>People generally caution as below:
+</p>
+<ul><li><i>The new kernels have CMA enabled by default. CMA is trying to
+ reserve 192MB of physically contiguous memory between physical 
+addresses 0x43000000 and 0x50000000. Using specifically this address 
+range is important because CedarX hardware can work only with the first 
+256MB of physical DRAM (the base physical address of DRAM is 
+0x40000000). Now if initrd is placed by u-boot somewhere in the middle 
+of this memory area (cutting it into two halves), then CMA can't reserve
+ physically contiguous 192MB memory block there anymore. So the 
+reservation of the CMA memory area fails at boot time:</i></li></ul>
+<ul><li><i>The solution for this problem is not to place initrd anywhere between 0x43000000 and 0x50000000</i></li></ul>
+<ul><li><b>Make sure you also create and copy the files modloop-sunxi, initramfs-sunxi-new to the /boot folder</b></li></ul>
+<ul><li><b>Lastly copy the apks folder to the root of the sdcard</b></li></ul>
+<p>The apks folder can be extracted by downloading the Generic ARM Image from <a rel="nofollow" class="external free" href="http://www.alpinelinux.org/downloads/">http://www.alpinelinux.org/downloads/</a>
+</p><p>Your SD-Card will look as below.
+</p>
+<ul><li>/boot</li>
+<li>/apks</li></ul>
+<p>and under /boot directory, the following
+</p>
+<ul><li>/boot/dtbs/sun8i-h3-orangepi-pc.dtb</li>
+<li>/boot/boot.scr</li>
+<li>/boot/initramfs-new</li>
+<li>/boot/modloop-sunxi</li>
+<li>/boot/vmlinuz-4.6.0-rc1-sunxi</li></ul>
+<h2><span class="mw-headline" id="Conclusion">Conclusion</span></h2>
+<p>Practice, read, ask, hang out in the forums, channels and that is how
+ you can learn. Dont worry about people not responding, they are not 
+being rude, some could be busy, the ones that aren't will respond, 
+finally dont be shy, drop an email to the mailing list.
+</p>
+<h2><span class="mw-headline" id="For_debugging_purposes_only">For debugging purposes only</span></h2>
+<p>need to paste tested scenarios
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190901051250
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.051 seconds
+Real time usage: 0.055 seconds
+Preprocessor visited node count: 60/1000000
+Preprocessor generated node count: 133/1000000
+Post‐expand include size: 1393/2097152 bytes
+Template argument size: 8/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    6.045      1 -total
+ 52.86%    3.195      1 Template:Move
+ 44.80%    2.708      1 Template:Style
+-->
+</div>
+<!-- Saved in parser cache with key wikidb-upgrade:pcache:idhash:3421-0!canonical and timestamp 20190901051250 and revision id 15602
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://wiki.alpinelinux.org/w/index.php?title=DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;oldid=15602">http://wiki.alpinelinux.org/w/index.php?title=DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;oldid=15602</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://wiki.alpinelinux.org/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://wiki.alpinelinux.org/wiki/Category:Hardware" title="Category:Hardware">Hardware</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="https://wiki.alpinelinux.org/w/index.php?title=Special:CreateAccount&amp;returnto=DIY+Fully+working+Alpine+Linux+for+Allwinner+and+Other+ARM+SOCs" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://wiki.alpinelinux.org/w/index.php?title=Special:UserLogin&amp;returnto=DIY+Fully+working+Alpine+Linux+for+Allwinner+and+Other+ARM+SOCs" title="You are encouraged to log in; however, it is not mandatory [Alt+Shift+o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.alpinelinux.org/wiki/DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs" title="View the content page [Alt+Shift+c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="https://wiki.alpinelinux.org/w/index.php?title=Talk:DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [Alt+Shift+t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label">
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="https://wiki.alpinelinux.org/wiki/DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs">Read</a></span></li><li id="ca-viewsource" class="collapsible"><span><a href="https://wiki.alpinelinux.org/w/index.php?title=DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;action=edit" title="This page is protected.
+You can view its source [Alt+Shift+e]" accesskey="e">View source</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.alpinelinux.org/w/index.php?title=DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;action=history" title="Past revisions of this page [Alt+Shift+h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label" style="">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Alpine Linux" title="Search Alpine Linux [Alt+Shift+f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.alpinelinux.org/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-Welcome" aria-labelledby="p-Welcome-label">
+			<h3 id="p-Welcome-label">Welcome</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Installation"><a href="https://wiki.alpinelinux.org/wiki/Installation">Installation</a></li><li id="n-FAQ"><a href="https://wiki.alpinelinux.org/wiki/FAQ">FAQ</a></li><li id="n-Tutorials-and-Howtos"><a href="https://wiki.alpinelinux.org/wiki/Tutorials_and_Howtos">Tutorials and Howtos</a></li><li id="n-Contribute"><a href="https://wiki.alpinelinux.org/wiki/Contribute">Contribute</a></li><li id="n-Developer-Documentation"><a href="https://wiki.alpinelinux.org/wiki/Developer_Documentation">Developer Documentation</a></li><li id="n-Glossary"><a href="https://wiki.alpinelinux.org/wiki/Glossary">Glossary</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Services" aria-labelledby="p-Services-label">
+			<h3 id="p-Services-label">Services</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Main-Site"><a href="https://alpinelinux.org/" rel="nofollow">Main Site</a></li><li id="n-Git-Repositories"><a href="https://git.alpinelinux.org/" rel="nofollow">Git Repositories</a></li><li id="n-Bug-Tracker"><a href="https://bugs.alpinelinux.org/projects/alpine/issues" rel="nofollow">Bug Tracker</a></li><li id="n-Forums"><a href="https://forum.alpinelinux.org/forum" rel="nofollow">Forums</a></li><li id="n-Mailing-Lists"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:Mailing_lists">Mailing Lists</a></li><li id="n-IRC-Channels"><a href="https://wiki.alpinelinux.org/wiki/IRC">IRC Channels</a></li><li id="n-Downloads"><a href="https://alpinelinux.org/downloads" rel="nofollow">Downloads</a></li><li id="n-Package-Database"><a href="https://pkgs.alpinelinux.org/packages" rel="nofollow">Package Database</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Wiki" aria-labelledby="p-Wiki-label">
+			<h3 id="p-Wiki-label">Wiki</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Recent-Changes"><a href="https://wiki.alpinelinux.org/wiki/Special:RecentChanges">Recent Changes</a></li><li id="n-Site-Index"><a href="https://wiki.alpinelinux.org/wiki/Special:PrefixIndex">Site Index</a></li><li id="n-Categories"><a href="https://wiki.alpinelinux.org/wiki/Special:Categories">Categories</a></li><li id="n-Help"><a href="https://wiki.alpinelinux.org/wiki/Category:Wiki">Help</a></li><li id="n-Maintenance"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:Wiki_maintenance">Maintenance</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Toolbox</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.alpinelinux.org/wiki/Special:WhatLinksHere/DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs" title="A list of all wiki pages that link here [Alt+Shift+j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.alpinelinux.org/wiki/Special:RecentChangesLinked/DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs" rel="nofollow" title="Recent changes in pages linked from this page [Alt+Shift+k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.alpinelinux.org/wiki/User:Dubiousjim/Special" title="A list of all special pages [Alt+Shift+q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://wiki.alpinelinux.org/w/index.php?title=DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;printable=yes" rel="alternate" title="Printable version of this page [Alt+Shift+p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://wiki.alpinelinux.org/w/index.php?title=DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;oldid=15602" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.alpinelinux.org/w/index.php?title=DIY_Fully_working_Alpine_Linux_for_Allwinner_and_Other_ARM_SOCs&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 9 December 2018, at 19:32.</li>
+								<li id="footer-info-copyright"><div align="right"><div id="footer-inner"> 
+  <p><a href="https://wiki.alpinelinux.org/wiki/Privacy_Policy#Copyright">© Copyright 2008-2019 Alpine Linux Development Team</a> 
+  all rights reserved </p></div></div></li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:Privacy_policy" title="Alpine Linux:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:About" title="Alpine Linux:About">About</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:General_disclaimer" class="mw-redirect" title="Alpine Linux:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="DIY%20Fully%20working%20Alpine%20Linux%20for%20Allwinner%20and%20Other%20ARM%20SOCs%20-%20Alpine%20Linux_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.051","walltime":"0.055","ppvisitednodes":{"value":60,"limit":1000000},"ppgeneratednodes":{"value":133,"limit":1000000},"postexpandincludesize":{"value":1393,"limit":2097152},"templateargumentsize":{"value":8,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    6.045      1 -total"," 52.86%    3.195      1 Template:Move"," 44.80%    2.708      1 Template:Style"]},"cachereport":{"timestamp":"20190901051250","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":37});});</script>
+	
+
+<div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
